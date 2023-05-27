@@ -1,0 +1,419 @@
+/*css reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* css variables  */
+
+ :root {
+    --navbar-height: 59px;
+}
+
+
+/* navigation bar  */
+
+#navbar {
+    height: 69px;
+    width: 100%;
+    position: sticky;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(13, 245, 245);
+    position: absolute;
+    top: 0px;
+    height: 69px;
+    width: 100%;
+    z-index: -1;
+    opacity: 100;
+}
+
+#navbar ul li a:hover {
+    color: rgb(104, 48, 79);
+    background-color: rgb(255, 255, 255);
+    margin-top: 28px;
+}
+
+
+/*  navigation bar logo and image  */
+
+#logo img {
+    margin: 10px;
+    padding: 5px;
+    height: 63px;
+    width: 44px;
+    margin-top: -29px;
+    margin-right: -12px;
+}
+
+#logo {
+    margin-left: 54px;
+    margin-top: 29px;
+    margin-bottom: -17px;
+}
+
+
+/*  navigation bar list styling */
+
+#navbar ul li a {
+    color: rgb(8, 8, 8);
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 2px 10px;
+    text-decoration: none;
+    margin-top: 32px;
+    border-radius: 17px;
+    border: 0.2px solid white;
+}
+
+
+/* home designing */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    /* height: 647px; */
+    height: 796px;
+    padding: 2px 2px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -97px;
+}
+
+#home::before {
+    content: "";
+    background: url(gym5.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 101%;
+    width: 100%;
+    top: 68px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1 {
+    color: #86eaea;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 13px;
+}
+
+
+/* services section  */
+
+#services {
+    margin: 30px;
+    display: flex;
+    margin-top: 5px;
+}
+
+#services-containter {
+    margin-top: 104px
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin: 4px;
+    margin-top: -32px;
+    border-radius: 24px;
+    padding: 30px;
+    background-color: rgb(243, 243, 243);
+}
+
+#services .box img {
+    border: rgb(243, 243, 243);
+    border-radius: 40px;
+    height: 159px;
+    padding: 15px;
+    display: block;
+    margin: auto;
+}
+
+
+/* clients section */
+
+#client-section {
+    margin-top: -180px;
+    height: 300px;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 107px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(images.jpg) no-repeat center center/cover;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.client-items {
+    padding: 53px;
+    margin-top: 35px;
+    margin-bottom: 32px;
+}
+
+#clients img {
+    height: 120px;
+    margin-top: 29px;
+}
+
+.ourclient {
+    font-size: 3.8rem;
+    margin-top: 11px;
+    margin-bottom: 64px;
+}
+
+#client-section h1 {
+    margin-top: 13px;
+}
+
+
+/* contact section */
+
+#contact {
+    margin-top: 34px;
+    height: 344px;
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url(bg.jpg) no-repeat center center/cover;
+    height: 928px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+#contact form {
+    width: 48%;
+    height: 720px;
+}
+
+.form-group {
+    margin-bottom: 34px;
+    margin-top: 6px;
+}
+
+#contact label {
+    font-size: 1.8rem;
+}
+
+#contact-box textarea {
+    border-radius: 12px;
+    font-size: 1.1rem;
+}
+
+#contact-box textarea,
+#contact-box input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+}
+
+.footer-center {
+    color: white;
+    margin-top: 584px;
+    font-size: 1.3rem;
+    padding-bottom: 4px;
+    margin-left: 91px;
+    z-index: -1;
+}
+
+.footer-center {
+    font-size: 1rem;
+}
+
+
+/* utility class */
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    margin-top: 98px;
+    margin-bottom: 13px;
+}
+
+.h-secondary {
+    font-size: 2.1rem;
+    padding: 12px;
+}
+
+.btn {
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 21px;
+    background-color: rgb(247, 157, 145);
+    margin: 15px;
+    margin-top: 94px;
+}
+
+.btn:hover {
+    color: black;
+    background-color: rgb(27, 255, 205);
+    margin-right: 6px;
+}
+
+.submit {
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 21px;
+    background-color: rgb(247, 157, 145);
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 310px;
+}
+
+.submit:hover {
+    color: black;
+    background-color: rgb(27, 255, 205);
+    margin-right: 6px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+    margin-top: -25px;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+.text-right a {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+#foot img {
+    height: 15px;
+    width: 15px;
+    margin-top: 5.2px;
+    margin-left: 8px;
+}
+
+#foot {
+    display: block;
+    width: 100%;
+    height: 19px;
+    background-color: grey;
+}
+
+.navbarcenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbarcenter img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: initial;
+    height: 40px;
+    width: 34px;
+}
+
+.navbarcenter .logoname {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: initial;
+    height: 40px;
+    width: 34px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    margin: 10px auto;
+    height: 13px;
+    margin-top: -119px;
+}
+
+strong {
+    height: 15px;
+    width: auto;
+    margin-top: 2px;
+    margin-left: 120px;
+}
+
+#logoname {
+    margin-top: 4px;
+    margin-left: 63px;
+    padding: 5px;
+    width: auto;
+    height: 0px;
+    font-size: 2.8rem;
+}
+
+#heading {
+    margin-left: 118px;
+    margin-top: -48px;
+}
+
+#logo img {
+    margin: 10px;
+    padding: 5px;
+    height: 63px;
+    width: 44px;
+    margin-top: -88px;
+    margin-right: 0px;
+    margin-left: 89px;
+}
+
+.item {
+    margin-top: 44px;
+}
+
+ul li {
+    list-style: none;
+}
